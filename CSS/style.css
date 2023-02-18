@@ -1,0 +1,349 @@
+/********** NORMES **********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    font-family: "Roboto", "Times New Roman", sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p, li {
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* width: 100%; */
+    max-width: 480px;
+    /* border: 1px solid black; */
+}
+
+/*********** HEADER **********/
+
+.header__logo {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    /* box-shadow: 0 4px 2px -2px gray; */
+    box-shadow: 0px 8px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo img {
+    width: 40%;
+}
+
+/********** LOCATION **********/
+
+.location {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 50px;
+    /* padding-top: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5px; */
+    /* border: 1px solid black; */
+}
+
+.location i {
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    /* border: 1px solid black; */
+}
+
+/********** SECTION EXPLORER **********/
+
+.explorer {
+    height: 250px;
+    width: 100%;
+    background: #f7f7f7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.explorer h1 {
+    width: 60%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.explorer p {
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.btn-purple {
+    width: 40%;
+    font-size: 0.9em;
+    height: 40px;
+    background: linear-gradient(#ed92df, #a65cdc);
+    font-weight: 500;
+    /* padding: 0; */
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 1px solid black; */
+}
+
+/********** SECTION FONCTIONNEMENT **********/
+
+.fonctionnement {
+    height: 350px;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.fonctionnement h1 {
+    align-self: flex-start;
+}
+
+.btn {
+    width: 80%;
+    height: 65px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-gray {
+    background: #f7f7f7;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn-gray:hover {
+    background: #f5edff;
+}
+
+.btn-gray i {
+    margin-right: 20px;
+    /* border: 1px solid black; */
+}
+
+.btn-gray span {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: #9356dc;
+    color: white;
+}
+
+/********** SECTION RESTAURANTS **********/
+
+.restaurants {
+    width: 100%;
+    height: 1200px;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.restaurants h1 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.card {
+    width: 90%;
+    height: 250px;
+    background: white;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.card__img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card__body {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+
+.card__body-icon {
+    font-size: 1.5em;
+    /* border: 1px solid black; */
+    /* padding-top: 10px; */
+}
+
+footer {
+    background: #353535;
+    color: white;
+    padding: 25px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+footer i {
+    padding-right: 10px;
+}
+
+footer img {
+    width: 30%;
+    filter: invert(100%);
+}
+
+/********* PAGES **************/
+
+.fa-arrow-left {
+    /* margin-right: 10px; */
+    font-size: 1.3em;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    /* border: 1px solid black; */
+}
+
+
+.menu__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*********** SECTION MENU ***********/
+
+.menu {
+    width: 100%;
+    height: 1160px;
+    border-radius: 25px;
+    background: #f7f7f7;
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+
+.menu__heading {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.menu__heading h1 {
+    font-family: "Shrikhand";
+    font-size: 2em;
+}
+
+.menu__part h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    border-bottom: 3px solid #99E2D0;
+    width: 10%;
+}
+
+.menu__heading i {
+    font-size: 1.5em;
+}
+
+.menu__part {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+
+/************* MENU BUTTONS ***********/
+
+.menu__button {
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 15px;
+}
+
+.btn-white {
+    background: white;
+    text-align: left;
+    /* border: 1px solid black; */
+    padding: 10px 20px 10px 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn__prix {
+    display: flex;
+    justify-content: space-between;
+}
+
+/************ MEDIA QUERIES ***********/
+
+/* @media only screen and (max-width: 994px) {
+    main {
+        display: flex;
+    }
+} */
+
+
+
+
