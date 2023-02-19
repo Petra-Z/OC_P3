@@ -1,11 +1,9 @@
+
 /********** NORMES **********/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-h1, h2, p {
     font-family: "Roboto", "Times New Roman", sans-serif;
 }
 
@@ -23,51 +21,48 @@ a {
 }
 
 body {
-    /* width: 100%; */
-    max-width: 480px;
-    /* border: 1px solid black; */
+    width: 100%;
+    min-width: 320px;
+    max-height: 100vh;
+    margin: 0 auto;
 }
 
+/*********** INDEX VERSION MOBILE************/
 /*********** HEADER **********/
 
 .header__logo {
     width: 100%;
     height: 60px;
-    /* border: 1px solid black; */
     text-align: center;
     padding-top: 15px;
     position: relative;
     z-index: 1;
-    /* box-shadow: 0 4px 2px -2px gray; */
     box-shadow: 0px 8px 15px -5px rgba(0, 0, 0, 0.1);
 }
 
 .header__logo img {
-    width: 40%;
+    width: 200px;
+    height: 35px; 
 }
 
-/********** LOCATION **********/
+/********** DIV LOCATION **********/
 
 .location {
     background-color: #eaeaea;
     width: 100%;
     height: 50px;
-    /* padding-top: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 5px; */
-    /* border: 1px solid black; */
 }
 
 .location i {
     padding-right: 15px;
     padding-bottom: 5px;
     font-size: 1em;
-    /* border: 1px solid black; */
 }
 
-/********** SECTION EXPLORER **********/
+/********** DIV EXPLORER **********/
 
 .explorer {
     height: 250px;
@@ -77,29 +72,29 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    /* padding-top: 35px;
+    padding-bottom: 35px; */
+    padding: 35px 0;
 }
 
 .explorer h1 {
     width: 60%;
-    /* border: 1px solid black; */
     margin: 0 auto;
 }
 
 .explorer p {
     width: 70%;
     margin: 0 auto;
-    /* border: 1px solid black; */
 }
 
 .btn-purple {
     width: 40%;
+    min-width: 185px;
+    max-width: 250px;
     font-size: 0.9em;
     height: 40px;
     background: linear-gradient(#ed92df, #a65cdc);
     font-weight: 500;
-    /* padding: 0; */
     color: white;
     text-align: center;
     border: none;
@@ -107,18 +102,13 @@ body {
     cursor: pointer;
     margin: 0 auto;
     margin-top: 20px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* border: 1px solid black; */
 }
 
-/********** SECTION FONCTIONNEMENT **********/
+/********** DIV FONCTIONNEMENT **********/
 
 .fonctionnement {
     height: 350px;
     width: 90%;
-    /* border: 1px solid black; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -132,8 +122,11 @@ body {
     align-self: flex-start;
 }
 
+/********** FONCTIONNEMENT BUTTONS **********/
+
 .btn {
     width: 80%;
+    min-width: 260px;
     height: 65px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
     border: none;
@@ -143,6 +136,7 @@ body {
 }
 
 .btn-gray {
+    max-width: 415px;
     background: #f7f7f7;
     font-size: 1em;
     font-weight: 600;
@@ -154,7 +148,6 @@ body {
 
 .btn-gray i {
     margin-right: 20px;
-    /* border: 1px solid black; */
 }
 
 .btn-gray span {
@@ -187,6 +180,8 @@ body {
     margin-top: 30px;
 }
 
+/********** CARD RESTAURANTS **********/
+
 .card {
     width: 90%;
     height: 250px;
@@ -195,7 +190,6 @@ body {
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
 }
 
 .card__img {
@@ -205,27 +199,25 @@ body {
 }
 
 .card__body {
-    /* padding-left: 20px;
-    padding-right: 20px; */
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid black; */
     margin-top: 10px;
 }
 
 .card__body-icon {
     font-size: 1.5em;
-    /* border: 1px solid black; */
-    /* padding-top: 10px; */
 }
 
+/********** FOOTER *********/
+
 footer {
+    height: 30vh;
+    padding: 25px;
     background: #353535;
     color: white;
-    padding: 25px;
 }
 
 footer ul {
@@ -240,21 +232,19 @@ footer i {
 }
 
 footer img {
-    width: 30%;
+    width: 170px;
+    height: 30px;
     filter: invert(100%);
 }
 
-/********* PAGES **************/
+/********** PAGES VERSION MOBILE **************/
 
 .fa-arrow-left {
-    /* margin-right: 10px; */
     font-size: 1.3em;
     position: absolute;
     left: 30px;
     top: 20px;
-    /* border: 1px solid black; */
 }
-
 
 .menu__img {
     width: 100%;
@@ -266,14 +256,13 @@ footer img {
 
 .menu {
     width: 100%;
-    height: 1160px;
+    height: 1200px;
     border-radius: 25px;
     background: #f7f7f7;
     position: relative;
     z-index: 1;
     margin-top: -30px;
     padding: 20px;
-    /* border: 1px solid black; */
 }
 
 .menu__heading {
@@ -284,7 +273,6 @@ footer img {
     display: flex;
     justify-content: space-between;   
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .menu__heading h1 {
@@ -310,25 +298,23 @@ footer img {
     flex-direction: column;
     justify-content: space-around;
     margin-top: 20px;
-    /* border: 1px solid black; */
 }
 
 /************* MENU BUTTONS ***********/
 
 .menu__button {
     width: 100%;
-    /* border: 1px solid black; */
-    text-align: center;
     padding-top: 15px;
+    text-align: center;
 }
 
 .btn-white {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px 20px 10px 10px;
     background: white;
     text-align: left;
-    /* border: 1px solid black; */
-    padding: 10px 20px 10px 10px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .btn__prix {
@@ -336,13 +322,280 @@ footer img {
     justify-content: space-between;
 }
 
-/************ MEDIA QUERIES ***********/
+/********** NOTE ENCHANTEE MENU AVEC 4btn *********/
 
-/* @media only screen and (max-width: 994px) {
-    main {
-        display: flex;
+._4btn{
+    height: 350px;
+}
+
+
+/************ MEDIA QUERIES ***********/
+/********** VERSION TABLETTE **********/
+
+@media only screen and (min-width: 768px) and (max-width: 994px) {
+   
+   /********** INDEX VERSION TABLETTE *******/
+
+    body {
+        width: 100%;
     }
-} */
+
+    .header__logo {
+        width: 100%;
+    }
+
+    .header__logo img {
+        max-width: 25%;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .btn {
+        width: 27%;
+        min-width: 230px;
+    }
+
+    .fonctionnement {
+        width: 100%;
+        height: 200px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .fonctionnement h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-gray span {
+        top: -10px;
+        left: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .restaurants {
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .restaurants h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /********* PAGES VERSION TABLETTE **********/
+
+    .fa-arrow-left {
+        visibility: hidden;
+    }
+
+    .menu {
+        width: 100%;
+        height: 700px;
+        padding: 10px;
+    }
+
+    .menu__heading {
+        width: 90%;
+    }
+
+    .btn-wide {
+        width: 90%;
+        height: 90px;
+    }
+
+    .btn-white {
+        min-width: 240px;
+        padding: 5px 10px 5px 5px;
+        max-height: 100px;
+    }
+
+    .menu__part {
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 20px;
+
+    }
+
+    .menu__part h2 {
+        grid-column: 1 / -1;
+        height: 30px;
+        border-bottom: 3px solid #99E2D0;
+    }
+
+    .menu__part h3 {
+        text-align: center;
+    }
+
+    .btn__prix p {
+        margin-top: 10px;
+    }
+
+    /********* LA NOTE ENCHANTEE VERSION TABLETTE*********/
+
+    .menu__part._4btn {
+        height: 260px;
+    }
+
+    .menu.note_enchante {
+        height: 830px;
+    }
+}
+
+/********** VERSION DESKTOP **********/
+
+@media only screen and (min-width: 994px) {
+
+    /******** INDEX VERSION DESKTOP *********/
+
+    body {
+        width: 100%;
+    }
+    .header__logo {
+        width: 100%;
+    }
+
+    .header__logo img {
+        max-width: 15%;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .btn {
+        width: 27%;
+    }
+    
+    .fonctionnement {
+        width: 100%;
+        height: 200px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .fonctionnement h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-gray span {
+        top: -10px;
+        left: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .restaurants {
+        height: 450px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .restaurants h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .card {
+        min-width: 250px;
+        min-height: 300px;
+    }
+
+    .card__img {
+        height: 200px;
+    }
+
+    footer {
+        padding-top: 35px;
+        height: 25vh;
+        text-align: center;
+    }
+
+    footer > ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+
+    }
+
+    /********** PAGES VERSION DESKTOP **********/
+
+    .fa-arrow-left {
+        visibility: hidden;
+    }
+
+    .menu {
+        width: 100%;
+        height: 700px;
+        padding: 10px;
+    }
+
+    .menu__heading {
+        width: 90%;
+    }
+
+    .btn-wide {
+        width: 90%;
+        padding: 5px 10px 5px 5px;
+        height: 100px;
+    }
+
+    .menu__part {
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .menu__part h2 {
+        height: 30px;
+        grid-column: 1 / -1;
+        border-bottom: 3px solid #99E2D0;
+        width: 5%;
+    }
+
+    .menu__part h3 {
+        text-align: center;
+    }
+
+    .btn__prix p {
+        margin-top: 10px;
+    }
+
+    /********* LA NOTE ENCHANTEE VERSION DESKTOP *********/
+
+    .menu__part._4btn {
+        height: 280px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .menu.note_enchante {
+        height: 830px;
+    }
+
+}
+
 
 
 

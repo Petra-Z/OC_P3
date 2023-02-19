@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./CSS/style.css">
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <title>Ohmyfood</title>
+        <title>Ohmyfood - À la française</title>
     </head>
     <body>
         <header>
@@ -17,65 +19,87 @@
             </div>
         </header>
         <main>
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette">
-            <section>
-                <h1>À la française</h1>
-                <i class="fa-regular fa-heart"></i>
-                <div>
+            <img class="menu__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette">
+            <section class="menu">
+                <div class="menu__heading">
+                    <h1>À la française</h1>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="menu__part">
                     <h2>ENTRÉES</h2>
-                    <button class="btn" type="buton">
-                        <span>Tartare de poulpe acidulé</span>
-                        <span>Aux zestes d'orange</span>
-                        <span>25€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <div class="btn__prix">
+                            <p>Aux zestes d'orange</p>
+                            <p>25€</p>
+                        </div>
                     </button>
-                    <button class="btn" type="buton">
-                        <span>Velouté de légumes d'antan</span>
-                        <span>Carotte, panais, topinambour</span>
-                        <span>35€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <div class="btn__prix">
+                            <p>Carotte, panais, topinambour</p>
+                            <p>35€</p>
+                        </div>
                     </button>
-                    <button class="btn" type="buton">
-                        <span>Soupe à l'oignon</span>
-                        <span>Revisitée</span>
-                        <span>20€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Soupe à l'oignon</h3>
+                        <div class="btn__prix">
+                            <p>Revisitée</p>
+                            <p>20€</p>
+                        </div>
                     </button>
                 </div>
-                <div>
+                <div class="menu__part">
                     <h2>PLATS</h2>
-                    <button class="btn" type="buton">
-                        <span>Coquilles Saint-Jacques</span>
-                        <span>Accompagnées d'une purée de panais</span>
-                        <span>40€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <div class="btn__prix">
+                            <p>Accompagnées d'une purée de panais</p>
+                            <p>40€</p>
+                        </div>
                     </button>
-                    <button class="btn" type="buton">
-                        <span>Magret de canard</span>
-                        <span>Et parmentier de pommes de terre</span>
-                        <span>35€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Magret de canard</h3>
+                        <div class="btn__prix">
+                            <p>Et parmentier de pommes de terre</p>
+                            <p>35€</p>
+                        </div>
                     </button>
-                    <button class="btn" type="buton">
-                        <span>Pigeonneau d’Ille-et-Vilaine</span>
-                        <span>Sur son lit de gnocchis aux légumes</span>
-                        <span>44€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                        <div class="btn__prix">
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <p>44€</p>
+                        </div>
                     </button>
                 </div>
-                <div>
+                <div class="menu__part">
                     <h2>Desserts</h2>
-                    <button class="btn" type="buton">
-                        <span>Pétales de violettes glacés</span>
-                        <span>Et purée de noisettes</span>
-                        <span>18€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Pétales de violettes glacés</h3>
+                        <div class="btn__prix">
+                            <p>Et purée de noisettes</p>
+                            <p>18€</p>
+                        </div>
                     </button>
-                    <button class="btn" type="buton">
-                        <span>Fondant au chocolat</span>
-                        <span>Revisité</span>
-                        <span>22€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Fondant au chocolat</h3>
+                        <div class="btn__prix">
+                            <p>Revisité</p>
+                            <p>22€</p>
+                        </div>
                     </button>
-                    <button class="btn" type="buton">
-                        <span>Millefeuille croustillant</span>
-                        <span>Myrtilles et pâte d’amande</span>
-                        <span>23€</span>
+                    <button class="btn btn-white btn-wide" type="buton">
+                        <h3>Millefeuille croustillant</h3>
+                        <div class="btn__prix">
+                            <p>Myrtilles et pâte d’amande</p>
+                            <p>23€</p>
+                        </div>
                     </button>
                 </div>
-                <button type="submit">Commander</button>
+                <div class="menu__button">
+                    <button class="btn-purple" type="submit">Commander</button>
+                </div>
             </section>
         </main>
         <footer>
