@@ -12,6 +12,7 @@
     </head>
     <body>
         <header>
+            <div class="loader"><div class="spinner"></div></div>
             <div class="header__logo">
                 <a href="index.html">
                     <img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
@@ -30,21 +31,23 @@
             </div>
             <div class="fonctionnement">
                 <h1>Fonctionnement</h1>
-                <button class="btn btn-gray"><span>1</span><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</button>
-                <button class="btn btn-gray"><span>2</span><i class="fa-solid fa-list"></i>   Composez votre menu</button>
-                <button class="btn btn-gray"><span>3</span><i class="fa-solid fa-store"></i> Dégustez au restaurant</button>
+                <button class="btn-fonctionnement"><span>1</span><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</button>
+                <button class="btn-fonctionnement"><span>2</span><i class="fa-solid fa-list"></i>   Composez votre menu</button>
+                <button class="btn-fonctionnement"><span>3</span><i class="fa-solid fa-store"></i> Dégustez au restaurant</button>
             </div>
-            <section class="restaurants">
+            <div class="restaurants">
                 <h1>Restaurants</h1>
                 <a href="la_palette_du_gout.html">
                     <div class="card">
                         <img class="card__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette">
+                        <div class="img__text">NOUVEAU</div>
                         <div class="card__body">
                             <div class="card__body-text">
                                 <h2>La palette du goût</h2>
                                 <p>Ménilmontant</p>
                             </div>
-                            <div class="card__body-icon">
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart"></i>
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -53,12 +56,14 @@
                 <a href="la_note_enchantee.html">
                     <div class="card">
                         <img class="card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="assiette">
+                        <div class="img__text">NOUVEAU</div>
                         <div class="card__body">
                             <div class="card__body-text">
                                 <h2>La note enchantée</h2>
                                 <p>Charonne</p>
                             </div>
-                            <div class="card__body-icon">
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart"></i>
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -72,7 +77,8 @@
                                 <h2>À la française</h2>
                                 <p>Cité Rouge</p>
                             </div>
-                            <div class="card__body-icon">
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart"></i>
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -86,13 +92,14 @@
                                 <h2>Le délice des sens</h2>
                                 <p>Folie Méricourt</p>
                             </div>
-                            <div class="card__body-icon">
+                            <div class="heart-icon">
+                                <i class="fa-solid fa-heart"></i>
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
                     </div>
                 </a>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="footer__logo">
@@ -101,10 +108,10 @@
                 </a>
             </div>
             <ul>
-                <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
-                <li><i class="fa-solid fa-handshake-simple"></i> Devenir un partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
+                <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-simple"></i> Devenir un partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
             </ul>
         </footer>
     </body>
