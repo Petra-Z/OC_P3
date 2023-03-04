@@ -434,8 +434,8 @@ footer img {
 }
 
 .menu__item {
-  width: 80%;
-  min-width: 260px;
+  width: 90%;
+  min-width: 345px;
   max-width: 450px;
   margin: 0 auto;
   padding: 13px 20px 20px 20px;
@@ -478,7 +478,7 @@ footer img {
   height: 70px;
   transform-origin: right;
   border-radius: 0px 15px 15px 0px;
-  transform: translateX(65px);
+  transform: translateX(70px);
   overflow: hidden;
   transition-duration: 0.5s;
 }
@@ -747,6 +747,7 @@ footer img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .menu__subtitle h2 {
