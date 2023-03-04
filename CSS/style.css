@@ -10,6 +10,14 @@ h1 {
   font-size: 1.5rem;
 }
 
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
 p,
 li {
   font-size: 1.1rem;
@@ -29,52 +37,62 @@ body {
 
 /**************LOADER ANIMATION***********/
 
-/* .loader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    background-color: #ffffffc9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: loader 0.5s ease-out;
-    animation-delay: 1.2s;
-    animation-fill-mode: both;
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffffc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 0.5s 1.2s both ease-out;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: purple;
+  background: linear-gradient(#ed92df, #a65cdc);
+  box-shadow: 0px 0px 200px -1px black;
+  border: 2px solid white;
+  animation: spin 1.2s linear infinite;
+}
+
+.spinner::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 0px 100px -70px black;
+  border: 2px solid white;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
   }
-  .spinner {
-    border: 10px solid #d3d3d3;
-    border-top: 10px solid #FF79DA;
-    border-bottom: 10px solid #9356DC;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: spin 1.2s linear infinite;
+
+  100% {
+    opacity: 0;
+    z-index: -1000;
   }
-  
-  @keyframes loader {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    99% {
-      z-index: 1000;
-    }
-    100% {
-      opacity: 0;
-      z-index: -1000;
-    }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
   }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  } */
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
 /*********** INDEX VERSION MOBILE************/
 /*********** HEADER **********/
@@ -121,8 +139,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* padding-top: 35px;
-    padding-bottom: 35px; */
   padding: 35px 0;
 }
 
@@ -143,6 +159,7 @@ body {
   min-width: 185px;
   max-width: 250px;
   font-size: 1.1rem;
+  font-family: "Roboto", "Times New Roman", sans-serif;
   height: 40px;
   background: linear-gradient(#ed92df, #a65cdc);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
@@ -155,6 +172,8 @@ body {
   margin: 0 auto;
   margin-top: 20px;
 }
+
+/********** ANIMATION BOUTONS PRINCIPAUX ***********/
 
 .btn-purple:hover {
   opacity: 0.9;
@@ -194,6 +213,7 @@ body {
   background: #f7f7f7;
   font-size: 1rem;
   font-weight: 600;
+  font-family: "Roboto", "Times New Roman", sans-serif;
 }
 
 .btn-fonctionnement i {
@@ -279,7 +299,7 @@ body {
   position: relative;
 }
 
-/********** HEART ICON ANIMATION*******/
+/********** ANIMATION BOUTON COEUR *******/
 
 .fa-solid.fa-heart {
   font-size: 1.7rem;
@@ -287,6 +307,7 @@ body {
   right: 5px;
   top: 10px;
   background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -354,7 +375,6 @@ footer img {
 
 .menu {
   width: 100%;
-  /* height: 1200px; */
   border-radius: 25px;
   background: #f7f7f7;
   position: relative;
@@ -371,7 +391,6 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .menu__title h1 {
@@ -389,7 +408,7 @@ footer img {
   right: 30px;
 }
 
-/************* MENU BUTTONS ***********/
+/************* MENU ITEMS ***********/
 
 .menu__subtitle h2 {
   font-weight: 300;
@@ -400,17 +419,17 @@ footer img {
 
 .menu__subtitle {
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 20px;
-  /* border: 1px solid black; */
 }
 
 .menu__button {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -423,21 +442,22 @@ footer img {
   background: white;
   text-align: left;
   overflow: hidden;
-  width: 80%;
   height: 70px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 15px;
   position: relative;
   cursor: pointer;
-  /* border: 1px solid black; */
 }
 
 .menu__item-description {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
+}
+
+.menu__button {
+  margin-bottom: 25px;
 }
 
 .menu__item-text {
@@ -445,6 +465,8 @@ footer img {
   overflow: hidden;
   white-space: nowrap;
 }
+
+/********** ANIMATION APPARITION COCHE A DROITE **********/
 
 .menu__item-check {
   position: absolute;
@@ -456,10 +478,9 @@ footer img {
   height: 70px;
   transform-origin: right;
   border-radius: 0px 15px 15px 0px;
-  transform: translateX(70px);
+  transform: translateX(65px);
   overflow: hidden;
   transition-duration: 0.5s;
-  /* border: 1px solid black; */
 }
 
 .fa-check-circle {
@@ -483,11 +504,11 @@ footer img {
 }
 
 .menu__item:hover .fa-check-circle {
-  transform: rotate(360deg);
+  transform: rotate(1turn);
   transition: 0.5s ease-in-out;
 }
 
-/*************APPARITION PROGRESSIVE MENU **********/
+/************* ANIMMTION APPARITION PROGRESSIVE MENU **********/
 
 .menu__subtitle > :nth-of-type(1) {
   animation: SlideDown 0.9s ease-in-out;
@@ -516,8 +537,10 @@ footer img {
   }
 }
 
-.menu__button {
-  margin-bottom: 25px;
+/********* LA NOTE ENCHANTEE VERSION MOBILE *********/
+
+.menu__subtitle.quatre__entrees {
+  height: 450px;
 }
 
 /************ MEDIA QUERIES ***********/
@@ -585,36 +608,35 @@ footer img {
     text-align: center;
   }
 
-/********* PAGES VERSION TABLETTE **********/
+  /********* PAGES VERSION TABLETTE **********/
 
-.menu__title {
+  .menu__title {
     width: 70%;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 20px
-}
+    margin-bottom: 20px;
+  }
 
-.menu__subtitle {
+  .menu__subtitle {
     width: 85%;
     margin: 0 auto;
     margin-top: 2px;
-}
+  }
 
-.menu__button {
-  margin-bottom: 20px;
-}
+  .menu__button {
+    margin-bottom: 20px;
+  }
 
-.fa-heart.pages {
-  top: 20px;
-  right: 40px;
-}
-
+  .fa-heart.pages {
+    top: 20px;
+    right: 40px;
+  }
 }
 
 /********** VERSION DESKTOP **********/
 
 @media only screen and (min-width: 994px) {
-
+  
   /******** INDEX VERSION DESKTOP *********/
 
   body {
@@ -666,12 +688,21 @@ footer img {
   }
 
   .card {
-    min-width: 250px;
-    min-height: 300px;
+    min-height: 275px;
   }
 
   .card__img {
     height: 200px;
+  }
+
+  .fa-solid.fa-heart {
+    right: -5px;
+    top: 10px;
+  }
+
+  .fa-regular.fa-heart {
+    right: -5px;
+    top: 10px;
   }
 
   footer {
@@ -688,9 +719,9 @@ footer img {
 
   /********** PAGES VERSION DESKTOP **********/
 
-   .menu {
+  .menu {
     width: 100%;
-    height: 700px;
+    height: 720px;
     padding: 10px;
   }
 
@@ -701,10 +732,6 @@ footer img {
     position: relative;
   }
 
-  .menu__title h1 {
-    padding-bottom: 15px;
-  }
-
   .fa-heart.pages {
     top: 20px;
     right: 40px;
@@ -713,7 +740,6 @@ footer img {
   .menu__item {
     width: 95%;
     padding: 10px 10px 10px 20px;
-    /* height: 100px; */
   }
 
   .menu__subtitle {
@@ -732,19 +758,13 @@ footer img {
     width: 5%;
   }
 
-
-
   /********* LA NOTE ENCHANTEE VERSION DESKTOP *********/
 
-  .menu__part._4btn {
-    height: 280px;
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .menu.note__enchantee {
+    height: 800px;
   }
 
-  .menu.note_enchante {
-    height: 830px;
+  .menu__subtitle.quatre__entrees {
+    height: 250px;
   }
 }
